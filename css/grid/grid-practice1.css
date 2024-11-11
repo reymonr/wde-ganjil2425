@@ -1,0 +1,44 @@
+#layout {
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-areas: 
+    "header header  header"
+    "ads    main    links"
+    "footer footer  footer";
+}
+
+body {
+  background-color: bisque;
+}
+
+#header {
+  /* background-color: lightblue; */
+  grid-area: header;
+  text-align: center;
+  padding: 15px auto;
+}
+
+#ads {
+  /* background-color: lightcoral; */
+  grid-area: ads;
+}
+
+#main {
+  /* background-color: lightgoldenrodyellow; */
+  grid-area: main;
+}
+
+#links {
+  /* background-color: lightgreen; */
+  grid-area: links;
+}
+
+#footer {
+  /* background-color: lightseagreen; */
+  grid-area: footer;
+}
+
+#footer p {
+  text-align: center;
+}
